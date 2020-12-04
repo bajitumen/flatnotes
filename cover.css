@@ -1,0 +1,144 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: black;
+}
+.timer {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: black;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: white;
+  
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  font-family: 'Source Code Pro', monospace;  
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead, .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: black;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+
+/* Animation */
+
+p {
+  border-right: solid 3px white;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-size: 20px;
+  color: black;
+  letter-spacing: 2px;
+}
+
+/* Animation */
+p {
+  animation: animated-text 1.5s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(10,end) 2.5s 1 normal both;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 185px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: black;}
+  to{border-right-color: transparent;}
+}
+
+/* te
